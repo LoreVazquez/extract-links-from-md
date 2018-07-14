@@ -1,4 +1,5 @@
-const extractLinksFromMd = require('extract-links-from-md');
+// const assert = require ('assert');
+const extractLinksFromMd = require('../js/extract-links-from-md');
 const str = `# Lorem ipsum
 
 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
@@ -15,4 +16,4 @@ culpa qui officia deserunt mollit anim id est laborum.`;
 
 const links = extractLinksFromMd(str);
 
-console.log(links);
+console.log("1",links);
