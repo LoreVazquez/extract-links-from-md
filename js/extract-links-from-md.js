@@ -1,47 +1,41 @@
+'use strict';
+
 (function (){
 
-let glinks = [];
-let pairTextLink = {};
+
+    const extractLinksFromMd = function (str)  {
+
+        // const expRegular = /\[(\w.*)\]\((\w.*|(http(s)?|ftp:\/\/.)?(www\.)?[-a-zA-Z0-9@:%._\+~#=]{2,256}\.[a-z]{2,6}\b([-a-zA-Z0-9@:%_\+.~#?&\/\/=]*)?)\)/gi;
+        const expRegular = /(!)?\[([^\[.]*?)\]\((.*?)\)/gi;
+        let glinks = [];
+        let pairTextLink = {};
+        let match;
 
 
-
-const extractLinksFromMd = function (str)  {
-
-    toString(str);
-    const expRegular = /!?\[([^\[.]*?)\]\((.*?)\)/gi;
-    // const expRegular = /\[(\w.*)\]\((\w.*|(http(s)?|ftp:\/\/.)?(www\.)?[-a-zA-Z0-9@:%._\+~#=]{2,256}\.[a-z]{2,6}\b([-a-zA-Z0-9@:%_\+.~#?&\/\/=]*)?)\)/gi;
+        while(match = expRegular.exec(str)){
+            if (match[1]==="!"){
+            console.log(`Esto es una imagen: ${match[1]}[${match[2]}](${match[3]}).`);
+            } else{
+                pairTextLink = {text: match[2], href: match[3]};
+                glinks.push(pairTextLink);
+            }  
+        };
     
-    
-    let match;
-    while(match = expRegular.exec(str)){
-        if (match[1].startsWith("![")){
-        console.log(`Lo sentimos, esto ${match[1]} no es un link, es una imagen`);
-    } else{
-        pairTextLink = {text: match[1], href: match[2]};
-        glinks.push(pairTextLink);
-    }
-        
-       
-    }//cierra while
- 
- 
 
-    return glinks;
+        return glinks;
 
 
-}//cierra extractLinksFromMd
+    }//cierra extractLinksFromMd
 
 
-
-
-module.exports = extractLinksFromMd;
+    if(typeof window  == 'undefined'){
+        module.exports = extractLinksFromMd;
+    } else {
+        window.extractLinksFromMd = extractLinksFromMd;
+    };
 
 
 })();
-
-
-
-
 
  /*   
  ------------DOCUMENTACIÓN EXPRESIONES REGUALARES--------------------------
