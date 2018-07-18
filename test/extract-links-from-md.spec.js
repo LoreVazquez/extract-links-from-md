@@ -1,20 +1,16 @@
-const assert = require('assert');
+
+'use strict';
+
+const assert = require ('assert');
 const extractLinksFromMd = require('../js/extract-links-from-md');
+const str = `[enlaces locales al principio de texto sin caracter previo que puede romper la validación de imagen](local.md) este corchete  "[" que no debería alterar nada, el texto de [este enlace](http://enlace.com) aquí hay más texto(muy lame pero este parentesís puede provocar que truene la expresión regular).
+
+![imagen](imagen.png "alt")
 
 
-/*const str = `# Lorem ipsum
+Aquí hay [enlaces locales](local.md) y [enlace a dominio no calificado](http://localhost), incluso un enlace a un [ftp](ftp://dominio.com)`;
 
-Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
-incididunt ut [labore](//en.wiktionary.org/wiki/labore) et
-[dolore](hps://en.wiktionary.org/wiki/dolore) magna aliqua. Ut enim ad minim
-veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-consequat.
 
-[foo](http://foo.com)
-
-Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu
-fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
-culpa qui officia deserunt mollit anim id est laborum.`;*/
 
 describe("Testing extractLinksFromMd ()", () => {
 
@@ -36,6 +32,11 @@ describe("Testing extractLinksFromMd ()", () => {
 });
 
 
-//const links = extractLinksFromMd(str);
 
-//console.log("1", links);
+const links = extractLinksFromMd(str);
+
+
+
+
+console.log(links);
+
