@@ -1,3 +1,4 @@
+
 'use strict';
 
 (function (){
@@ -33,6 +34,7 @@
     } else {
         window.extractLinksFromMd = extractLinksFromMd;
     };
+
 
 
 })();
