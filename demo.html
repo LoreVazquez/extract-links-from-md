@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Demo Glinks MD</title>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-rc.2/css/materialize.min.css">
+    <link rel="stylesheet" href="css/demo.css">
+</head>
+<body>
+    <nav>
+        <div class="nav-wrapper">
+            <a href="#" class="brand-logo">Glinks MD</a>
+            <ul id="nav-mobile" class="right hide-on-med-and-down">
+                <li><a href="sass.html">Sass</a></li>
+                <li><a href="badges.html">Components</a></li>
+                <li><a href="collapsible.html">JavaScript</a></li>
+            </ul>
+        </div>
+    </nav>
+    <main>
+        <div class="row">
+            <form class="offset-m3 col m6">
+                <div class="row">
+                    <div class="input-field col s12">
+                        <textarea id="textarea1" class="materialize-textarea "></textarea>
+                        <label for="textarea1">Ingresa tu text/markdown </label>
+                    </div>
+                </div>
+            </form>
+        </div>
+        <div class="row center-align">
+            <button class="btn waves-effect waves-light" type="submit" name="action">Submit
+                <i class="material-icons right">send</i>
+            </button>
+        </div>
+        
+    </main>
+    <section>
+        <div class="row">
+            <div class="offset-m3 col m6">
+                <div class="card-panel teal">
+                    <h5>Links encontrados en tu markdown:</h5>
+                    <!-- <span class="white-text">
+                    </span> -->
+                </div>
+            </div>
+        </div>
+    </section>
+    
+
+    <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-rc.2/js/materialize.min.js"></script>
+    <script src="js/extract-links-from-md.js"></script>
+    <script src="js/demo.js"></script>
+</body>
+</html>
