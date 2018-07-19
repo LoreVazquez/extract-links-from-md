@@ -6,7 +6,6 @@
 
     const extractLinksFromMd = function (str)  {
 
-        // const expRegular = /\[(\w.*)\]\((\w.*|(http(s)?|ftp:\/\/.)?(www\.)?[-a-zA-Z0-9@:%._\+~#=]{2,256}\.[a-z]{2,6}\b([-a-zA-Z0-9@:%_\+.~#?&\/\/=]*)?)\)/gi;
         const expRegular = /(!)?\[([^\[.]*?)\]\((.*?)\)/gi;
         let glinks = [];
         let pairTextLink = {};
@@ -14,17 +13,13 @@
 
 
         while(match = expRegular.exec(str)){
-            if (match[1]==="!"){
-            console.log(`Esto es una imagen: ${match[1]}[${match[2]}](${match[3]}).`);
-            } else{
+            if (match[1] !== "!"){
                 pairTextLink = {text: match[2], href: match[3]};
                 glinks.push(pairTextLink);
-            }  
-        };
-    
+            }
+        };    
 
         return glinks;
-
 
     }//cierra extractLinksFromMd
 
