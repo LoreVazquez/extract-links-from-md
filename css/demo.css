@@ -5,3 +5,7 @@ nav a.brand-logo {
 h5 {
     color: white;
 }
+
+#content {
+    margin-top: 3rem;
+}
