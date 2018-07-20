@@ -1,9 +1,8 @@
 
 'use strict';
-
+const fs = require('fs');
 (function (){
-
-
+    
     const extractLinksFromMd = function (str)  {
 
         const expRegular = /(!)?\[([^\[.]*?)\]\((.*?)\)/gi;
@@ -29,10 +28,13 @@
     } else {
         window.extractLinksFromMd = extractLinksFromMd;
     };
-
-
+    
 
 })();
+
+;
+
+
 
  /*   
  ------------DOCUMENTACIÓN EXPRESIONES REGUALARES--------------------------
