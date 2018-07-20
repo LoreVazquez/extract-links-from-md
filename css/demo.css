@@ -1,11 +1,50 @@
+nav {
+    position: fixed;
+    background-color:rgba(153, 0, 102, .5);
+    /* opacity: 0.2; */
+}
+
+
 nav a.brand-logo {
     margin-left: 5rem;
+    font-family: 'Tajawal', sans-serif;
 }
+
+.parallax-container {
+    height: 20rem;
+  }
 
 h5 {
     color: white;
+    font-family: 'Quicksand', sans-serif;
 }
 
 #content {
     margin-top: 3rem;
+}
+
+section {
+    padding-top: 3rem;
+    padding-bottom: 4rem;
+}
+form {
+    background-color: #F2F4F4;
+    border-radius: .5rem;
+}
+
+.btn {
+    margin-bottom: 3rem;
+    margin-top: 2rem;
+}
+
+div .card-panel {
+    background-color: #448679;
+}
+
+.page-footer {
+    background-color: #442C3F;
+}
+
+.text {
+    background-color: #442C3F;
 }
