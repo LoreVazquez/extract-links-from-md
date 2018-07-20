@@ -5,23 +5,30 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Demo Glinks MD</title>
+    <link href="https://fonts.googleapis.com/css?family=Pacifico|Quicksand|Tajawal" rel="stylesheet">
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-rc.2/css/materialize.min.css">
     <link rel="stylesheet" href="css/demo.css">
 </head>
 <body>
     <nav>
-        <div class="nav-wrapper">
+        <div class="nav-wrapper z-depth-3">
             <a href="#" class="brand-logo">Glinks MD</a>
-            <ul id="nav-mobile" class="right hide-on-med-and-down">
+            <!-- <ul id="nav-mobile" class="right hide-on-med-and-down">
                 <li><a href="sass.html">Sass</a></li>
                 <li><a href="badges.html">Components</a></li>
                 <li><a href="collapsible.html">JavaScript</a></li>
-            </ul>
-        </div>
+            </ul> -->
+        </div> 
     </nav>
     <main>
+        <div class="parallax-container">
+            <div class="parallax"><img src="http://smarterware.org/wp-content/uploads/2016/04/programming1.jpg"></div>
+        </div>
+    </main>
+    <section>
         <div class="row">
+        <h4 class="offset-m3 col m6">Texto en formato markdown:</h4>
             <form class="offset-m3 col m6">
                 <div class="row">
                     <div class="input-field col s12">
@@ -32,27 +39,32 @@
             </form>
         </div>
         <div class="row center-align">
-            <button class="btn waves-effect waves-light" type="submit" name="action">Submit
-                <i class="material-icons right">send</i>
-            </button>
+            <a href="#links" class="waves-effect waves-light btn">
+                <i class="material-icons right">send</i>Extract links
+            </a>
         </div>
-        
-    </main>
-    <section>
         <div class="row">
             <div class="offset-m3 col m6">
-                <div class="card-panel teal">
-                    <h5>Links encontrados en tu markdown:</h5>
+                <div id="links" class="card-panel">
+                    <h5><i class="material-icons left white-text">dehaze</i>Links encontrados en tu markdown:</h5>
                     <div id="content" class="white-text"></div>
                 </div>
             </div>
         </div>
     </section>
+    <footer class="page-footer">
+        <div class="footer-copyright">
+            <div class="container">
+                © 2014 Copyright Text
+                <a class="grey-text text-lighten-4 right" href="#!">More Links</a>
+            </div>
+        </div>
+    </footer>
     
 
     <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-rc.2/js/materialize.min.js"></script>
-    <script src="js/extract-links-from-md.js"></script>
-    <script src="js/demo.js"></script>
+    <script src="lib/extract-links-from-md.js"></script>
+    <script src="lib/demo.js"></script>
 </body>
 </html>

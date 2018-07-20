@@ -10,17 +10,12 @@ const demoGlinksMd = function() {
       let href = element.href;
     
       $('#content').append(`
-          <p><strong>Text :</strong> ${text}</p>
+          <p class="white-text"><strong>Text :</strong> ${text}</p>
           <p><strong>href :</strong> ${href}</p>
-          <hr class="text">
+          <hr>
       `);
-      markDownText.val(" ");
     });
   };
-
-  const scrollToLinks = function(){
-
-  }
 
 
 $(document).ready(function() {
