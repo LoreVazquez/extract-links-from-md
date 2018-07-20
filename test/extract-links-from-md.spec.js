@@ -2,7 +2,7 @@
 'use strict';
 
 const assert = require ('assert');
-const extractLinksFromMd = require('../js/extract-links-from-md');
+const extractLinksFromMd = require('../js/extract-links-from-md.js');
 
 describe("Testing extractLinksFromMd ()", () => {
 
