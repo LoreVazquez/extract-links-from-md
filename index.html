@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,80 +8,75 @@
     <title>Glinks-MD</title>
     <!-- Compiled and minified CSS -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-rc.2/css/materialize.min.css">
-
+    <link rel="stylesheet" href="css/main.css">
 </head>
+
 <body>
     <header>
         <nav>
             <div class="nav-wrapper">
                 <a href="#" class="brand-logo">Glinks-MD</a>
-                <ul id="nav-mobile" class="right hide-on-med-and-down">
-                <li><a href="sass.html">Descripción</a></li>
-                <li><a href="badges.html">Instalación</a></li>
-                <li><a href="demo.html">Demo</a></li>
+                <ul class="right hide-on-med-and-down">
+                    <li><a href="#instalation">Instalación</a></li>
+                    <li><a href="demo.html">Demo</a></li>
                 </ul>
             </div>
 
         </nav>
     </header>
-    <section id="description">
-        <img class="materialboxed" width="100%" src="assets/portada.jpg">
-        <div>
-            <img src="logo" alt="">
-            <h2>Glinks-MD es un modulo de Node.js para extraer los links de un texto formato Markdown</h2>
-        </div>
-
-    </section>
-    <section id="instalation">
-        <div>
-             <img src="" alt="">
-             <h2>Instalacion</h2>
-        </div>
-        <div>NPM
-            <ul>
-                <li>$ npm install glinks-md</li>
-            </ul>
-        </div>
-    </section>
-    <section id="usage">
-            <div>
-                 <img src="" alt="">
-                 <h2>Uso</h2>
+    <main>
+        <section id="description">
+            <div id="title" class="row">
+                <img src="logo" alt="">
+                <h2 class="col 5 offset-l6">Glinks-MD es un modulo de Node.js para extraer los links de un texto formato Markdown</h2>
             </div>
-            <div>
-                <ul>
-                    <li>1. Instala glinks-MD en el directorio raiz de tu proyecto</li>
-                    <li> </li>
+
+        </section>
+        <section id="instalation" class="section">
+            <div class="center">
+                <img width="100px" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRoCKqmYLeYUZKDPG6onmYougF8jbys-df1AmTbntCDiUkrN5ytmA" alt="">
+                <h3>Instalación</h3>
+            </div>
+            <div class=" row section #fce4ec pink lighten-5">
+                <ul class="col 10 offset-l1">
+                    <li>NPM</li>
+                    <li>$ npm install glinks-md</li>
+                </ul>
+            </div>
+            <div class="divider"></div>
+        </section>
+
+        <section id="usage" class="section">
+            <div class="center">
+                <img width="100px" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTgpOtGzhiZsYILoqC1IrbBiIJKMdW5t_FkJm9Ajll5e3KDckM6" alt="">
+                <h3> Uso</h3>
+            </div>
+            <div class=" row section #fce4ec pink lighten-5">
+                <ul class="col 10 offset-l1">
+                    <li> Utiliza el siguiente código:</li>
+                    <img class="section" src="assets/usage.PNG" alt="">
                 </ul>
             </div>
         </section>
+    </main>
     <footer class="page-footer">
-            <div class="container">
-              <div class="row">
+        <div class="container">
+            <div class="row">
                 <div class="col l6 s12">
-                  <h5 class="white-text">Footer Content</h5>
-                  <p class="grey-text text-lighten-4">You can use rows and columns here to organize your footer content.</p>
+                    <h5 class="white-text">Glinks-MD</h5>
+                    <p class="grey-text text-lighten-4">Authors: Ambar Valle & Lorena Vazquez</p>
                 </div>
-                <div class="col l4 offset-l2 s12">
-                  <h5 class="white-text">Links</h5>
-                  <ul>
-                    <li><a class="grey-text text-lighten-3" href="#!">Link 1</a></li>
-                    <li><a class="grey-text text-lighten-3" href="#!">Link 2</a></li>
-                    <li><a class="grey-text text-lighten-3" href="#!">Link 3</a></li>
-                    <li><a class="grey-text text-lighten-3" href="#!">Link 4</a></li>
-                  </ul>
-                </div>
-              </div>
             </div>
-            <div class="footer-copyright">
-              <div class="container">
-              © 2014 Copyright Text
-              <a class="grey-text text-lighten-4 right" href="#!">More Links</a>
-              </div>
+        </div>
+        <div class="footer-copyright">
+            <div class="container">
+                © 2018 Copyright
             </div>
-          </footer>
+        </div>
+    </footer>
 
     <!-- Compiled and minified JavaScript -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-rc.2/js/materialize.min.js"></script>
 </body>
+
 </html>

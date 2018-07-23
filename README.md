@@ -4,6 +4,10 @@ Módulo de Node.js que recibe un string (en formato Markdown) y extrae todos los
 ***
 Visita el demo en [https://lorevazquez.github.io/extract-links-from-md](https://lorevazquez.github.io/extract-links-from-md)
 
+##Instalación
+
+
+##Uso
 
 Implementar un módulo de Node.js que reciba un string (en formato Markdown) y
 extraiga todos los links encontrados. La implementación debe ser una función que
