@@ -18,6 +18,7 @@ nav a.brand-logo {
 }
 
 h2 {
+    background-color: rgb(252, 205, 245);
     text-align: center;
     margin: 30vh 0 0 0;
 }
