@@ -1,6 +1,8 @@
 nav {
     position: fixed;
     background-color: rgba(153, 0, 102, .5);
+    height: 5rem;
+    z-index: 100;
     /* opacity: 0.2; */
 }
 
@@ -9,18 +11,29 @@ nav a.brand-logo {
     font-family: 'Tajawal', sans-serif;
 }
 
+nav #logo {
+    margin-bottom: 1rem;
+    margin-top: .5rem;
+}
+
 #title {
-    background-image: url("../assets/portada.jpg");
+    background-image: url("../assets/images/portada.jpg");
     background-repeat: no-repeat;
     background-size: 100%;
     background-position: center;
     height: 80vh;
 }
 
-h2 {
-    background-color: rgb(252, 205, 245);
+.margin {
+    margin-top: 20vh;
+    width: 300px;
+}
+
+h3 {
+    background-color: rgb(253, 226, 236);
     text-align: center;
-    margin: 30vh 0 0 0;
+    margin: 5vh 0 0 0;
+    font-family: 'Baloo Bhai', cursive;
 }
 
 .center {
