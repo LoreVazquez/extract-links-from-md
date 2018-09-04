@@ -52,7 +52,7 @@ Se agrega la siguiente línea de código, para que se pueda hacer uso de la func
 Ejemplo contenido de archivo MD:
 
 ```js
-# Lorem ipsum
+## Lorem ipsum
 
 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
 incididunt ut [labore](https://en.wiktionary.org/wiki/labore) et
