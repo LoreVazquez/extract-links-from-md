@@ -1,7 +1,7 @@
 # Glinks MD
 
 Módulo de Node.js que recibe un string (en formato Markdown) y extrae todos los links encontrados en dicho archivo y los devuelve en arreglo de objetos.
-***
+
 ![screenshot](assets/images/resultado.PNG)
 
 ## Proyecto desarrollado en [Laboratoria](http://laboratoria.la)
