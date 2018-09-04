@@ -2,19 +2,17 @@
 
 Módulo de Node.js que recibe un string (en formato Markdown) y extrae todos los links encontrados en dicho archivo y los devuelve en arreglo de objetos.
 ***
-Visita el demo en [https://lorevazquez.github.io/extract-links-from-md](https://lorevazquez.github.io/extract-links-from-md)
-
-
 ![screenshot](assets/images/resultado.PNG)
 
 ## Proyecto desarrollado en [Laboratoria](http://laboratoria.la)
-
 
 ![icon](assets/images/node.png) ![icon](assets/images/npm-logo.png) ![icon](assets/images/mocha.png) ![icon](assets/images/babel.png)
 
 ## En  [México]
 
 ---
+Visita el demo en [https://lorevazquez.github.io/extract-links-from-md](https://lorevazquez.github.io/extract-links-from-md)
+
 ## Instalación
 
 ![Comando de instalacion](assets/images/npm.PNG)
