@@ -2,7 +2,7 @@
 
 Módulo de Node.js que recibe un string (en formato Markdown) y extrae todos los links encontrados en dicho archivo y los devuelve en arreglo de objetos.
 
-![screenshot](assets/images/resultado.PNG)
+![screenshot](https://user-images.githubusercontent.com/37418584/45058243-a6b30f80-b05d-11e8-89cc-f4250774450a.PNG)
 
 ## Proyecto desarrollado en [Laboratoria](http://laboratoria.la)
 
